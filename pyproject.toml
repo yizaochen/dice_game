@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dice-game"
+version = "0.1.0"
+description = "A CLI dice throwing game using Typer"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "typer>=0.9.0"
+]
+
+[project.scripts]
+roll-dice = "dice_game.dice_game:app"
